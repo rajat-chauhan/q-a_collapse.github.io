@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+    font-family: 'Roboto', sans-serif;   
+}
+body{
+    width: 100vw;
+    height: auto;
+    background-image: url("./images/qa.png");
+    background-position: center;   
+}
+#main-head{
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px pink;
+}
+#main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.qa-box{
+    background-color: rgba(236, 223, 223, 0.8); 
+    width: 80vw;
+    height: auto; 
+    margin: 5px;
+    margin-top: 25px;
+    padding: 16px;
+    overflow: hidden;
+    backdrop-filter: blur(4px);
+    position: relative;
+}
+.ques{
+    font-size: 1.5rem;
+}
+/* to hide an answer */
+.ans{
+    margin-top: 2%;
+    font-size: 1rem;
+    display: none;
+}
+/* when user click on toggle button, then "active" class gets  */
+/* added to qa-box and then answer is visible. this is done by JS*/
+.qa-box.active .ans {
+    display: block;
+}
+.btn-toggle{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 15%;
+    right: 3%;   
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;    
+}
+
+.btn-toggle .fa-solid{
+    font-size: 1.5rem;
+}
+.btn-toggle .fa-circle-chevron-down{
+    outline: none;
+}
+/* we hide cross-mark ny default */
+.btn-toggle .fa-circle-xmark{
+    display: none;
+}
+/* when user click on toggle button, then "active" class gets  */
+/* added to qa-box then cross-mark is visible and down-arrow is 
+invisible..this "active" class is added/removed by JS*/
+.qa-box.active .btn-toggle .fa-circle-xmark{
+    display: block;
+}
+.qa-box.active .btn-toggle .fa-circle-chevron-down{
+    display: none;
+}
+
+
+
+
+@media screen and (min-width: 359px) and (max-width: 500px) {
+    body{
+        width: 100vw;
+        height: 100vh;
+        background-image: url("./images/qa2.jpg");
+        overflow: hidden;
+    }
+    #main-head{
+        margin-top: 15px;      
+    } 
+    .qa-box{
+        width: 85vw;
+        height: auto; 
+        margin: 5px;
+        margin-top: 20px;
+        margin-right: 20px;
+        padding: 10px;
+        overflow: hidden;
+        backdrop-filter: blur(4px);
+    }
+    .ques{
+        font-size: 0.8rem;
+    }
+    .ans{
+        font-size: 0.8rem;
+        display: none;
+    }
+    .btn-toggle{
+        position: absolute;
+        top: 15%;
+        right: 1.2%;   
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+    }   
+    .btn-toggle .fa-solid{
+        font-size: 1rem;
+    }
+}
