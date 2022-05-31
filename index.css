@@ -88,7 +88,7 @@ invisible..this "active" class is added/removed by JS*/
 @media screen and (min-width: 359px) and (max-width: 500px) {
     body{
         width: 100vw;
-        height: 100vh;
+        height: auto;
         background-image: url("./images/qa2.jpg");
     }
     #main-head{
