@@ -35,6 +35,17 @@ body{
     backdrop-filter: blur(4px);
     position: relative;
 }
+.qa-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+.qa-top .ques{
+    width: 90%;
+}
+.qa-top .btn-toggle{
+    width: 10%;
+}
 .ques{
     font-size: 1.5rem;
 }
@@ -54,9 +65,9 @@ body{
     border: none;
     cursor: pointer;
     position: absolute;
-    top: 15%;
-    right: 3%;   
-    margin-left: 10%;
+    top: 18%;
+    right: 0;   
+    margin-left: 8%; 
     display: flex;
     align-items: center;
     justify-content: space-evenly;    
@@ -113,7 +124,7 @@ invisible..this "active" class is added/removed by JS*/
     }
     .btn-toggle{
         position: absolute;
-        top: 15%;
+        top: 10%;
         right: 1.2%;   
         display: flex;
         align-items: center;
