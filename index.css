@@ -65,7 +65,7 @@ body{
     border: none;
     cursor: pointer;
     position: absolute;
-    top: 18%;
+    top: 15%;
     right: 0;   
     margin-left: 8%; 
     display: flex;
@@ -115,6 +115,20 @@ invisible..this "active" class is added/removed by JS*/
         overflow: hidden;
         backdrop-filter: blur(4px);
     }
+    .qa-top{
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+        position: relative;    
+    }
+    .qa-top .ques{
+        width: 90%;
+    }
+    .qa-top .btn-toggle{
+        position: absolute;
+        top: 5%;
+        width: 10%;
+    }
     .ques{
         font-size: 0.8rem;
     }
@@ -124,12 +138,12 @@ invisible..this "active" class is added/removed by JS*/
     }
     .btn-toggle{
         position: absolute;
-        top: 10%;
+        top: 25%;
         right: 1.2%;   
         display: flex;
         align-items: center;
-        justify-content: center;    
-    }   
+        justify-content: space-evenly;    
+    }  
     .btn-toggle .fa-solid{
         font-size: 1rem;
     }
