@@ -9,7 +9,7 @@
 body{
     width: 100vw;
     height: auto;
-    background-image: url("./images/qa.png");
+    background-image: url("./images/qa2.jpg");
     background-position: center;   
 }
 #main-head{
@@ -38,12 +38,15 @@ body{
 .qa-top{
     display: flex;
     flex-direction: column;
-    justify-content: center;    
+    justify-content: center;
+    position: relative;    
 }
 .qa-top .ques{
     width: 90%;
 }
 .qa-top .btn-toggle{
+    position: absolute;
+    top: 10%;
     width: 10%;
 }
 .ques{
@@ -65,7 +68,7 @@ body{
     border: none;
     cursor: pointer;
     position: absolute;
-    top: 15%;
+    top: 18%;
     right: 0;   
     margin-left: 8%; 
     display: flex;
